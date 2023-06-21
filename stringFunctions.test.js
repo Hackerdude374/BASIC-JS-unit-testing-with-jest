@@ -8,7 +8,9 @@ describe("reverseString(word) returns the word reversed", () => {
         expect(stringFunc.reverseString("")).toBe(null);
       })
   
-
+      test("reverseString('OpenAI') => IAnepO", () => {
+        expect(stringFunc.reverseString("OpenAI")).toBe("IAnepO");
+      })
   })
 
 describe("isPalindrome(word) determines if word is a palindrome (true) or not (false)", () => {
