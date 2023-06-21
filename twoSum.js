@@ -1,5 +1,6 @@
 function twoSum(array, targetSum){
     let map = new Map();//this is to find if the array contains the complement.
+    
     for(let i = 0; i< array.length;i++){
         complement = targetSum-array[i]; //find the complement
         if(map.has(complement)){//success
@@ -10,7 +11,7 @@ function twoSum(array, targetSum){
         //if no complement update complement
         map.set(array[i], i);
     }
-    return null;
+    return [];
 }
 
 module.exports = twoSum;
